@@ -8,7 +8,9 @@
 
     <% @articles.reverse.each do |article| %>
       <li>
-        <%= link_to article.title, article_path(article) %>
+        <h2>
+          <%= link_to article.title, article_path(article) %>
+        </h2>
       </li>
     <% end %>
   </ul>

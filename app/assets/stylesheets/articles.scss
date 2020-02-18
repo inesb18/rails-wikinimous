@@ -1,6 +1,10 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$red: #F15152;
+$green: #009987;
+$dark_green: #007E6F;
+
 .body {
   font-family: 'PT Sans', sans-serif;
 }
@@ -10,29 +14,68 @@
   padding: 16px;
   display: flex;
   justify-content: space-between;
-  background: #F15152;
+  align-items: center;
+  background: $red;
   margin-bottom: 32px;
   a{
   color: white !important;
   text-decoration: none;
+  }
+  .wiki {
+    font-size: 24px;
+  }
+  .new-article {
+    font-size: 16px;
   }
 }
 
 .page {
   width: 60%;
   margin: 0 auto;
+  h3 {
+    font-family: 'Squada One', cursive;
+    color: $green;
+  }
+  a{
+    color: $green;
+    &:hover {
+      color: $dark_green;
+    }
+  }
   .articles-list {
     list-style: none;
     padding: 0 0;
     li {
+      h2 {
+        font-size: 18px;
+      }
       margin-bottom: 16px;
-      a{
-        color: #4062BB;
-        // font-family: 'Squada One', cursive;
-      &:hover {
-        color: #35519A;
-      }
-      }
+    }
+  }
+  .article-title {
+    font-family: 'Squada One', cursive;
+    color: $green;
+  }
+  .actions-article {
+    display:flex;
+    justify-content: flex-end;
+    .delete {
+      margin-left: 10px;
+    }
+  }
+  .article-content {
+    text-align: justify;
+    margin-bottom: 100px;
+  }
+  .button {
+    background-color: white;
+    color: $green;
+    border: 1px solid $dark_green;
+    border-radius: 3px;
+    padding: 6px 14px;
+    &:hover {
+      background-color: $green;
+      color: white;
     }
   }
 }

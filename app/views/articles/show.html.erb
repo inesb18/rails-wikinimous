@@ -1,7 +1,22 @@
-<h2> <%= @article.title %> </h2>
+<h2 class="article-title"> <%= @article.title %> </h2>
 
-<%= link_to "Edit", edit_article_path(@article) %>
-<%= link_to "Delete", article_path(@article), method: :delete %>
+<div class="actions-article">
 
-<p> <%= @article.content %> </p>
+  <div class="edit">
+    <%= link_to edit_article_path(@article) do %>
+      <i class="fas fa-pen"></i>
+    <% end %>
+  </div>
+
+  <div class="delete">
+    <%= link_to article_path(@article), method: :delete do %>
+      <i class="fas fa-trash"></i>
+    <% end %>
+  </div>
+
+
+</div>
+
+<hr>
+<p class="article-content"> <%= @article.content %> </p>
 
