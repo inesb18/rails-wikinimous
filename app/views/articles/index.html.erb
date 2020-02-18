@@ -1,0 +1,16 @@
+<% if @articles.empty? %>
+
+  <p>No artcile, sorry!</p>
+
+<% else %>
+
+  <ul>
+
+    <% @articles.each do |article| %>
+      <li>
+        <%= article.title %>
+      </li>
+    <% end %>
+  </ul>
+
+<% end %>
