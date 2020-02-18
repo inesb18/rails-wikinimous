@@ -9,8 +9,8 @@
 require 'faker'
 
 10.times do
-  title = Faker::TvShows::Community.quotes
+  title = Faker::TvShows::Friends.quotes
   content = ''
-  15.times { content += Faker::TvShows::Community.quotes }
+  15.times { content += Faker::TvShows::Friends.quotes }
   Article.create(title: title, content: content)
 end
