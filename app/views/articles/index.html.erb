@@ -1,10 +1,10 @@
 <% if @articles.empty? %>
 
-  <p>No artcile, sorry!</p>
+  <p>No article, sorry!</p>
 
 <% else %>
 
-  <ul>
+  <ul class="articles-list">
 
     <% @articles.reverse.each do |article| %>
       <li>

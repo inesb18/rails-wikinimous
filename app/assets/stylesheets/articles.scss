@@ -1,3 +1,38 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.banner {
+  font-family: 'Squada One', cursive;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  background: #F15152;
+  margin-bottom: 32px;
+  a{
+  color: white !important;
+  text-decoration: none;
+  }
+}
+
+.page {
+  width: 60%;
+  margin: 0 auto;
+  .articles-list {
+    list-style: none;
+    padding: 0 0;
+    li {
+      margin-bottom: 16px;
+      a{
+        color: #4062BB;
+        // font-family: 'Squada One', cursive;
+      &:hover {
+        color: #35519A;
+      }
+      }
+    }
+  }
+}
